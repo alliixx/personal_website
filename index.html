@@ -73,15 +73,15 @@
     <h1>Allison Xin</h1>
     <p>Caltech undergraduate | CS + Economics | Machine Learning + Social Science</p>
     <nav>
-      <a onclick="showTab('about')">Home</a>
+      <a onclick="showTab('home')">Home</a>
       <a onclick="showTab('projects')">Projects</a>
-      <a onclick="showTab('research')">Research</a>
-      <a onclick="showTab('teaching')">Teaching</a>
+      <a onclick="showTab('cv')">CV</a>
     </nav>
   </header>
 
   <main>
-    <section id="about" class="card tab-content active">
+    <!-- HOME -->
+    <section id="home" class="card tab-content active">
       <h2>About Me</h2>
       <p>Hi! I'm Allison, a Caltech undergraduate majoring in Computer Science and Economics. I research machine learning, generative models, and language-based interfaces, with applications in both social science and assistive robotics. I'm also a Caltech NCAA DIII swimmer and a TA for theoretical CS courses.</p>
 
@@ -107,29 +107,23 @@
       </div>
     </section>
 
+    <!-- PROJECTS -->
     <section id="projects" class="card tab-content">
-      <h2>Projects</h2>
+      <h2>Projects & Research</h2>
       <ul>
-        <li><strong>Hacktech Finalist (2025)</strong>: Built a Streamlit app to predict healthcare insurance charges using ML (XGBoost, CatBoost), generate AI-driven counterfactuals, and visualize model performance.</li>
-        <li><strong>Math Club Co-Founder</strong>: Created opportunities for students to compete in AMC/NACLO; started Mu Alpha Theta chapter at Stargate.</li>
+        <li><strong>Amber Lab (2025–Present):</strong> NLP/LLM-based interface for lower-body exoskeletons, exploring user personalization via interaction patterns (Prof. Yisong Yue, Amy Li).</li>
+        <li><strong>Social Science Lab (2024–Present):</strong> Developed Bayesian models for electoral accountability and voting behavior. Built an R package to simulate congressional elections (Profs. Katz & King).</li>
+        <li><strong>Hacktech Finalist (2025):</strong> Built a Streamlit app to predict healthcare costs, generate counterfactuals using XGBoost and CatBoost, and visualize performance.</li>
+        <li><strong>CU Boulder Neuro Lab (2022):</strong> Modeled decision making using Bayesian inference and implemented in Java (Prof. Matt Jones).</li>
+        <li><strong>Math Club Co-Founder:</strong> Founded the first NACLO chapter in Colorado. Led Mu Alpha Theta and organized math/linguistics competitions.</li>
       </ul>
     </section>
 
-    <section id="research" class="card tab-content">
-      <h2>Research</h2>
-      <ul>
-        <li><strong>Amber Lab (2025–Present)</strong>: NLP/LLM-based interface for exoskeletons, personalization via user feedback patterns (advised by Prof. Yue & Amy Li).</li>
-        <li><strong>Social Science Lab (2024–Present)</strong>: Bayesian models for electoral accountability and behavior using R (advised by Profs. Katz & King).</li>
-        <li><strong>Neuro Lab, CU Boulder (2022)</strong>: Bayesian decision-making models in Java (advised by Prof. Jones).</li>
-      </ul>
-    </section>
-
-    <section id="teaching" class="card tab-content">
-      <h2>Teaching</h2>
-      <ul>
-        <li><strong>CS 38 (Algorithms)</strong> — TA for Prof. Urmila Mahadev (2025)</li>
-        <li><strong>CS 21 (Decidability & Tractability)</strong> — TA for Prof. Chris Umans (2025)</li>
-      </ul>
+    <!-- CV -->
+    <section id="cv" class="card tab-content">
+      <h2>Curriculum Vitae</h2>
+      <p>Click below to download the full PDF version of my CV.</p>
+      <p><a href="resume.pdf" target="_blank">Download Resume (PDF)</a></p>
     </section>
   </main>
 
