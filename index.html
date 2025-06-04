@@ -56,10 +56,6 @@
     ul {
       padding-left: 1.25rem;
     }
-    .contact-info {
-      margin-top: 1rem;
-      font-size: 0.95rem;
-    }
     .contact-info a {
       color: #f97316;
       text-decoration: none;
@@ -77,18 +73,38 @@
     <h1>Allison Xin</h1>
     <p>Caltech undergraduate | CS + Economics | Machine Learning + Social Science</p>
     <nav>
-      <a onclick="showTab('about')">About</a>
+      <a onclick="showTab('about')">Home</a>
       <a onclick="showTab('projects')">Projects</a>
       <a onclick="showTab('research')">Research</a>
       <a onclick="showTab('teaching')">Teaching</a>
-      <a onclick="showTab('contact')">Contact</a>
     </nav>
   </header>
 
   <main>
     <section id="about" class="card tab-content active">
       <h2>About Me</h2>
-      <p>Hi! I'm Allison, a Caltech undergraduate majoring in Computer Science and Economics. I research machine learning, generative models, and language-based interfaces, with applications in both social science and assistive robotics. I'm a member of the Caltech NCAA DIII Swimming & Diving team and an active TA for theoretical CS courses.</p>
+      <p>Hi! I'm Allison, a Caltech undergraduate majoring in Computer Science and Economics. I research machine learning, generative models, and language-based interfaces, with applications in both social science and assistive robotics. I'm also a Caltech NCAA DIII swimmer and a TA for theoretical CS courses.</p>
+
+      <h2>Research Interests</h2>
+      <ul>
+        <li>Machine Learning & Generative Models</li>
+        <li>Natural Language Interfaces for Robotics</li>
+        <li>Bayesian Models for Electoral Behavior</li>
+      </ul>
+
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>Languages:</strong> Python, Java, C, R, SQL, MySQL</li>
+        <li><strong>Tools:</strong> GitHub, VSCode, RStudio, IntelliJ</li>
+        <li><strong>Domains:</strong> Machine Learning, Generative Models, NLP, Bayesian Modeling</li>
+      </ul>
+
+      <h2>Contact</h2>
+      <div class="contact-info">
+        <p>Email: <a href="mailto:axin@caltech.edu">axin@caltech.edu</a></p>
+        <p>GitHub: <a href="https://github.com/alliixx" target="_blank">github.com/alliixx</a></p>
+        <p>Resume: <a href="resume.pdf" target="_blank">Download PDF</a></p>
+      </div>
     </section>
 
     <section id="projects" class="card tab-content">
@@ -114,15 +130,6 @@
         <li><strong>CS 38 (Algorithms)</strong> — TA for Prof. Urmila Mahadev (2025)</li>
         <li><strong>CS 21 (Decidability & Tractability)</strong> — TA for Prof. Chris Umans (2025)</li>
       </ul>
-    </section>
-
-    <section id="contact" class="card tab-content">
-      <h2>Contact</h2>
-      <div class="contact-info">
-        <p>Email: <a href="mailto:axin@caltech.edu">axin@caltech.edu</a></p>
-        <p>GitHub: <a href="https://github.com/alliixx" target="_blank">github.com/alliixx</a></p>
-        <p>Resume: <a href="resume.pdf" target="_blank">Download PDF</a></p>
-      </div>
     </section>
   </main>
 
