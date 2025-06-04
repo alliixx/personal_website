@@ -9,7 +9,7 @@
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
-      background: #f9f9f9;
+      background: #fdfdfd;
       color: #333;
     }
     header {
@@ -24,88 +24,64 @@
       text-decoration: none;
     }
     main {
-      max-width: 900px;
+      max-width: 960px;
       margin: 2rem auto;
-      padding: 0 1rem;
+      padding: 1rem;
+      display: grid;
+      gap: 2rem;
     }
-    section {
-      margin-bottom: 3rem;
+    .card {
+      background: #fff8f1;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
     h2 {
-      color: #222;
-      border-bottom: 2px solid #eee;
-      padding-bottom: 0.25rem;
+      margin-top: 0;
+      color: #111;
     }
     ul {
       padding-left: 1.25rem;
     }
-    .contact, .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-    .contact div, .skills div {
-      flex: 1 1 250px;
+    a.link {
+      color: #f97316;
+      text-decoration: none;
+      font-weight: 600;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Allison Xin</h1>
-    <p>Caltech CS + Economics | Researcher | ML Engineer</p>
+    <p>CS + Economics @ Caltech | Researcher | ML Engineer</p>
     <nav>
       <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#research">Research</a>
-      <a href="#teaching">Teaching</a>
-      <a href="#contact">Contact</a>
+      <a href="#interests">Interests</a>
+      <a href="projects.html">Projects</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
   <main>
-    <section id="about">
+    <section id="about" class="card">
       <h2>About Me</h2>
-      <p>I am an undergraduate at the California Institute of Technology (Caltech), majoring in Computer Science and Economics. I work on machine learning, generative models, and natural language interfaces, especially for scientific and social applications. I have research experience across political science, robotics, and cognitive science.</p>
+      <p>Hi, I'm Allison, an undergraduate at Caltech studying Computer Science and Economics. I'm currently a researcher at the Amber Lab and the Social Science Lab, working on machine learning models and language interfaces. I’m also a Teaching Assistant and a member of the NCAA DIII Varsity Swim & Dive team.</p>
     </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
+    <section id="interests" class="card">
+      <h2>Research Interests</h2>
       <ul>
-        <li><strong>Healthcare Prediction App (Hacktech Finalist)</strong> – Built a Streamlit app for insurance cost prediction with XGBoost and counterfactual generation.</li>
-        <li><strong>Electoral Accountability Model</strong> – Developed a generative statistical model in R to analyze congressional elections.</li>
-        <li><strong>LLM Interface for Exoskeleton</strong> – Built a personalized, LLM-driven control interface for assistive exoskeletons.</li>
+        <li>Machine Learning & Generative Models</li>
+        <li>LLM Interfaces for Assistive Technology</li>
+        <li>Electoral Modeling & Bayesian Inference</li>
       </ul>
     </section>
 
-    <section id="research">
-      <h2>Research Experience</h2>
-      <ul>
-        <li><strong>Amber Lab, Caltech</strong> – NLP/LLM interface for assistive robotics with Professor Yisong Yue and Amy Li.</li>
-        <li><strong>Social Science Lab, Caltech</strong> – Bayesian models of electoral outcomes with Professor Jonathan Katz and collaborators.</li>
-        <li><strong>Neuro Lab, CU Boulder</strong> – Bayesian decision-making models with Professor Matt Jones.</li>
-      </ul>
-    </section>
-
-    <section id="teaching">
-      <h2>Teaching</h2>
-      <ul>
-        <li>CS 38 (Algorithms) – TA for Prof. Urmila Mahadev and Claire Ralph</li>
-        <li>CS 21 (Decidability and Tractability) – TA for Prof. Chris Umans</li>
-      </ul>
-    </section>
-
-    <section id="contact">
-      <h2>Contact & Skills</h2>
-      <div class="contact">
-        <div>Email: <a href="mailto:axin@caltech.edu">axin@caltech.edu</a></div>
-        <div>GitHub: <a href="https://github.com/alliixx" target="_blank">@alliixx</a></div>
-        <div>Phone: (720) 234-1766</div>
-      </div>
-      <br>
-      <div class="skills">
-        <div><strong>Languages:</strong> Java, Python, C, R, SQL</div>
-        <div><strong>Tools:</strong> GitHub, VSCode, RStudio, IntelliJ</div>
-        <div><strong>AI/ML:</strong> Generative Models, XGBoost, CatBoost</div>
-      </div>
+    <section class="card">
+      <h2>Recent Updates</h2>
+      <p>Check out my latest work in the <a href="projects.html" class="link">Projects</a> section.</p>
+      <p>See my publications and ongoing research in the <a href="research.html" class="link">Research</a> section.</p>
     </section>
   </main>
 </body>
