@@ -13,28 +13,40 @@
       color: #333;
     }
     header {
-      background: #111;
-      color: white;
-      padding: 2rem;
+      background: #fff;
       text-align: center;
+      padding: 3rem 1rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.25rem;
+    }
+    header p {
+      font-size: 1.1rem;
+      margin: 0.5rem 0 1rem;
+      color: #555;
+    }
+    nav {
+      margin-bottom: 2rem;
     }
     nav a {
-      color: white;
-      margin: 0 1rem;
+      color: #f97316;
       text-decoration: none;
+      margin: 0 0.75rem;
+      font-weight: 600;
     }
     main {
       max-width: 960px;
-      margin: 2rem auto;
+      margin: auto;
       padding: 1rem;
       display: grid;
       gap: 2rem;
     }
     .card {
-      background: #fff8f1;
+      background: #fffaf5;
       border-radius: 12px;
       padding: 1.5rem;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
     }
     h2 {
       margin-top: 0;
@@ -43,45 +55,50 @@
     ul {
       padding-left: 1.25rem;
     }
-    a.link {
+    .contact-info {
+      margin-top: 1rem;
+      font-size: 0.95rem;
+    }
+    .contact-info a {
       color: #f97316;
       text-decoration: none;
-      font-weight: 600;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Allison Xin</h1>
-    <p>CS + Economics @ Caltech | Researcher | ML Engineer</p>
+    <p>Caltech undergraduate | CS + Economics | Machine Learning + Social Science</p>
     <nav>
-      <a href="#about">About</a>
-      <a href="#interests">Interests</a>
       <a href="projects.html">Projects</a>
       <a href="research.html">Research</a>
       <a href="teaching.html">Teaching</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
+
   <main>
-    <section id="about" class="card">
+    <section class="card">
       <h2>About Me</h2>
-      <p>Hi, I'm Allison, an undergraduate at Caltech studying Computer Science and Economics. I'm currently a researcher at the Amber Lab and the Social Science Lab, working on machine learning models and language interfaces. I’m also a Teaching Assistant and a member of the NCAA DIII Varsity Swim & Dive team.</p>
+      <p>Hi! I'm Allison, a Caltech undergraduate majoring in Computer Science and Economics. I research machine learning, generative models, and language-based interfaces, with applications in both social science and assistive robotics. I'm a member of the Caltech NCAA DIII Swimming & Diving team and an active TA for theoretical CS courses.</p>
     </section>
 
-    <section id="interests" class="card">
+    <section class="card">
       <h2>Research Interests</h2>
       <ul>
         <li>Machine Learning & Generative Models</li>
-        <li>LLM Interfaces for Assistive Technology</li>
-        <li>Electoral Modeling & Bayesian Inference</li>
+        <li>Natural Language Interfaces for Robotics</li>
+        <li>Bayesian Models for Electoral Behavior</li>
       </ul>
     </section>
 
     <section class="card">
-      <h2>Recent Updates</h2>
-      <p>Check out my latest work in the <a href="projects.html" class="link">Projects</a> section.</p>
-      <p>See my publications and ongoing research in the <a href="research.html" class="link">Research</a> section.</p>
+      <h2>Contact</h2>
+      <div class="contact-info">
+        <p>Email: <a href="mailto:axin@caltech.edu">axin@caltech.edu</a></p>
+        <p>GitHub: <a href="https://github.com/alliixx" target="_blank">github.com/alliixx</a></p>
+        <p>Resume: <a href="resume.pdf" target="_blank">Download PDF</a></p>
+      </div>
     </section>
   </main>
 </body>
