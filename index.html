@@ -66,6 +66,19 @@
     .tab-content.active {
       display: block;
     }
+    .project {
+      margin-bottom: 2rem;
+    }
+    .project img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+      object-fit: cover;
+      max-height: 250px;
+    }
+    .project h3 {
+      margin: 0.5rem 0;
+    }
   </style>
 </head>
 <body>
@@ -110,13 +123,31 @@
     <!-- PROJECTS -->
     <section id="projects" class="card tab-content">
       <h2>Projects & Research</h2>
-      <ul>
-        <li><strong>Amber Lab (2025–Present):</strong> NLP/LLM-based interface for lower-body exoskeletons, exploring user personalization via interaction patterns (Prof. Yisong Yue, Amy Li).</li>
-        <li><strong>Social Science Lab (2024–Present):</strong> Developed Bayesian models for electoral accountability and voting behavior. Built an R package to simulate congressional elections (Profs. Katz & King).</li>
-        <li><strong>Hacktech Finalist (2025):</strong> Built a Streamlit app to predict healthcare costs, generate counterfactuals using XGBoost and CatBoost, and visualize performance.</li>
-        <li><strong>CU Boulder Neuro Lab (2022):</strong> Modeled decision making using Bayesian inference and implemented in Java (Prof. Matt Jones).</li>
-        <li><strong>Math Club Co-Founder:</strong> Founded the first NACLO chapter in Colorado. Led Mu Alpha Theta and organized math/linguistics competitions.</li>
-      </ul>
+
+      <div class="project">
+        <img src="images/amber_lab.jpg" alt="Amber Lab Project">
+        <h3>Amber Lab: NLP Interfaces for Exoskeletons</h3>
+        <p>Developing LLM-based user interfaces for lower-body exoskeletons at Caltech Amber Lab. Research focuses on interaction personalization and adaptive control (advised by Prof. Yisong Yue, Amy Li).</p>
+      </div>
+
+      <div class="project">
+        <img src="images/social_science_lab.jpg" alt="Electoral Modeling">
+        <h3>Bayesian Models of Electoral Behavior</h3>
+        <p>Built an R package and generative model for simulating and analyzing congressional elections under uncertainty. Preparing library for publication (Profs. Katz & King).</p>
+      </div>
+
+      <div class="project">
+        <img src="images/hacktech.jpg" alt="Hacktech App">
+        <h3>Healthcare Cost Prediction (Hacktech Finalist)</h3>
+        <p>Created a Streamlit app using XGBoost and CatBoost to predict insurance charges and generate model-informed counterfactuals. Visualized uncertainty in cost drivers.</p>
+      </div>
+
+      <div class="project">
+        <img src="images/neuro_lab.jpg" alt="CU Boulder Lab">
+        <h3>CU Boulder Neuro Lab: Decision Modeling</h3>
+        <p>Modeled Bayesian decision processes and compared performance against human data from Jones & Sieck (2003). Implemented in Java and visualized results.</p>
+      </div>
+
     </section>
 
     <!-- CV -->
