@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Allison Xin</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
   <style>
     body {
       font-family: 'Inter', sans-serif;
@@ -34,6 +34,7 @@
       text-decoration: none;
       margin: 0 0.75rem;
       font-weight: 600;
+      cursor: pointer;
     }
     main {
       max-width: 960px;
@@ -63,6 +64,12 @@
       color: #f97316;
       text-decoration: none;
     }
+    .tab-content {
+      display: none;
+    }
+    .tab-content.active {
+      display: block;
+    }
   </style>
 </head>
 <body>
@@ -70,29 +77,46 @@
     <h1>Allison Xin</h1>
     <p>Caltech undergraduate | CS + Economics | Machine Learning + Social Science</p>
     <nav>
-      <a href="projects.html">Projects</a>
-      <a href="research.html">Research</a>
-      <a href="teaching.html">Teaching</a>
-      <a href="contact.html">Contact</a>
+      <a onclick="showTab('about')">About</a>
+      <a onclick="showTab('projects')">Projects</a>
+      <a onclick="showTab('research')">Research</a>
+      <a onclick="showTab('teaching')">Teaching</a>
+      <a onclick="showTab('contact')">Contact</a>
     </nav>
   </header>
 
   <main>
-    <section class="card">
+    <section id="about" class="card tab-content active">
       <h2>About Me</h2>
       <p>Hi! I'm Allison, a Caltech undergraduate majoring in Computer Science and Economics. I research machine learning, generative models, and language-based interfaces, with applications in both social science and assistive robotics. I'm a member of the Caltech NCAA DIII Swimming & Diving team and an active TA for theoretical CS courses.</p>
     </section>
 
-    <section class="card">
-      <h2>Research Interests</h2>
+    <section id="projects" class="card tab-content">
+      <h2>Projects</h2>
       <ul>
-        <li>Machine Learning & Generative Models</li>
-        <li>Natural Language Interfaces for Robotics</li>
-        <li>Bayesian Models for Electoral Behavior</li>
+        <li><strong>Hacktech Finalist (2025)</strong>: Built a Streamlit app to predict healthcare insurance charges using ML (XGBoost, CatBoost), generate AI-driven counterfactuals, and visualize model performance.</li>
+        <li><strong>Math Club Co-Founder</strong>: Created opportunities for students to compete in AMC/NACLO; started Mu Alpha Theta chapter at Stargate.</li>
       </ul>
     </section>
 
-    <section class="card">
+    <section id="research" class="card tab-content">
+      <h2>Research</h2>
+      <ul>
+        <li><strong>Amber Lab (2025–Present)</strong>: NLP/LLM-based interface for exoskeletons, personalization via user feedback patterns (advised by Prof. Yue & Amy Li).</li>
+        <li><strong>Social Science Lab (2024–Present)</strong>: Bayesian models for electoral accountability and behavior using R (advised by Profs. Katz & King).</li>
+        <li><strong>Neuro Lab, CU Boulder (2022)</strong>: Bayesian decision-making models in Java (advised by Prof. Jones).</li>
+      </ul>
+    </section>
+
+    <section id="teaching" class="card tab-content">
+      <h2>Teaching</h2>
+      <ul>
+        <li><strong>CS 38 (Algorithms)</strong> — TA for Prof. Urmila Mahadev (2025)</li>
+        <li><strong>CS 21 (Decidability & Tractability)</strong> — TA for Prof. Chris Umans (2025)</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="card tab-content">
       <h2>Contact</h2>
       <div class="contact-info">
         <p>Email: <a href="mailto:axin@caltech.edu">axin@caltech.edu</a></p>
@@ -101,5 +125,14 @@
       </div>
     </section>
   </main>
+
+  <script>
+    function showTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(tab => {
+        tab.classList.remove('active');
+      });
+      document.getElementById(tabId).classList.add('active');
+    }
+  </script>
 </body>
 </html>
